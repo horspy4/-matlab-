@@ -1,0 +1,10 @@
+fs = 4e9;           %整个系统的采样频率Hz
+fc = 1.8e9;         %地面雷达的工作频率Hz
+T = 3e-6;           %LFM信号的脉冲宽度s
+PRF = 1/(15e-6);    %LFM信号的周期为：15e-6 s
+BW=30e6;            %LFM信号的频率宽度hz
+c= physconst('LightSpeed'); %光速     %physconst函数：返回物理常数的值%
+radarPos= [0;0;0];  %地面侦测雷达的坐标
+radarVel= [0;0;0];  %地面侦测雷达的速度
+rwrPos= [-3000;1000;1000]; %飞机RWR的坐标
+rwrVel= [200; 0; 0]; %飞机RWR的速度矢量
